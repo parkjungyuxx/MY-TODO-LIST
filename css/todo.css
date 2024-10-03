@@ -1,0 +1,71 @@
+html {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #e2e2e2;
+}
+
+#weather {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: black;
+  margin: 24px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  min-width: 540px;
+  background-color: #ffffff;
+  gap: 16px;
+  margin-top: 50px;
+  padding: 24px;
+  min-height: 580px;
+}
+
+input {
+  font-size: 14px;
+  margin: 8px 0px 16px 32px;
+  padding: 14px 84px;
+  border-radius: 9999px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #e2e2e2;
+}
+
+#todo-list {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#weather {
+  gap: 8px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#date {
+  color: #b3b3b3;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 500;
+  font-size: 20px;
+}

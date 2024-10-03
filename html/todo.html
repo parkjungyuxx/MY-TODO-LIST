@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/todo.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/460111d067.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <container id="todo-list-container">
+        <div id="date"></div>
+        <p>TO DO LIST</p>
+        <form id="todo-form">
+          <input type="text" placeholder="ADD NEW TO DO" />
+        </form>
+        <ul id="todo-list"></ul>
+      </container>
+    </main>
+    <script src="../js/todo.js"></script>
+    <script src="../js/weather.js"></script>
+    <script src="../js/date.js"></script>
+  </body>
+</html>
