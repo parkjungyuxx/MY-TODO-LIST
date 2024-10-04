@@ -31,6 +31,7 @@ main {
   margin-top: 50px;
   padding: 24px;
   min-height: 580px;
+  position: relative;
 }
 
 input {
@@ -68,4 +69,17 @@ li {
 p {
   font-weight: 500;
   font-size: 20px;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+#deleteAllTheList {
+  position: absolute;
+  bottom: 32px;
+}
+
+#deleteAllTheList:hover {
+  transform: scale(1.08);
 }
