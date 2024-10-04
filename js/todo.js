@@ -52,10 +52,10 @@ if (savedToDos !== null) {
 }
 
 function deleteAllToDo(event) {
-  const liElements = document.querySelectorAll("li"); // 모든 li 요소 선택
-  liElements.forEach((li) => li.remove()); // 각 li 요소를 하나씩 삭제
-  toDos = []; // 배열도 초기화
-  saveToDos(); // localStorage도 초기화
+  const liElements = document.querySelectorAll("li");
+  liElements.forEach((li) => li.remove());
+  toDos = [];
+  saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
