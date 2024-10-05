@@ -22,14 +22,27 @@ function handleToDoSubmit(event) {
 function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
+  const leftContainer = document.createElement("div");
+  leftContainer.style.display = "flex"; 
+  leftContainer.style.alignItems = "center"; 
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.addEventListener("change", toggleComplete);
   const span = document.createElement("span");
-  const button = document.createElement("button");
-  button.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
-  button.addEventListener("click", deleteToDo);
-  toDoList.appendChild(li);
-  li.appendChild(span);
-  li.appendChild(button);
   span.innerText = newTodo.text;
+  leftContainer.appendChild(checkbox);
+  leftContainer.appendChild(span);
+  const deleteButton = document.createElement("button");
+  deleteButton.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
+  deleteButton.addEventListener("click", deleteToDo);
+  li.appendChild(leftContainer);
+  li.appendChild(deleteButton);
+  toDoList.appendChild(li);
+}
+
+function toggleComplete(event) {
+  const li = event.target.closest("li");
+  li.classList.toggle("completed");
 }
 
 function deleteToDo(event) {

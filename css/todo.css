@@ -49,6 +49,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 14px;
 }
 
 #weather {
@@ -82,4 +83,42 @@ button:hover {
 
 #deleteAllTheList:hover {
   transform: scale(1.08);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  position: relative;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
